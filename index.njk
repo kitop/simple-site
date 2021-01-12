@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>👋</title>
+    {% set css %}
+      {% include "style.css" %}
+    {% endset %}
+    <style>
+      {{ css | safe }}
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      {{ hook.body | escape }}
+    </div>
+  </body>
+</html>
